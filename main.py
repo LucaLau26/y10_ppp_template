@@ -54,8 +54,10 @@ while gamestart:
 
     if userinput == "go_east" and "shovel" in inventory and "gold" in inventory:
         secondscene = True
-    else: 
+    else:
+        print()
         print("You can't do that yet.")
+        print()
         userinput = input("Command? ")
         
 gamestart = False
