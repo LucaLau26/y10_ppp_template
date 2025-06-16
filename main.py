@@ -26,12 +26,31 @@ while gamestart:
     if userinput == "pick_up_shovel":
         inventory.append("shovel")
         print()
-        userinput = input("Command? ")
+        print("You now have a shovel.")
+        print()
+        userinput == input("Command? ")
+        if "shovel" in inventory:
+            print()
+            print("You already have that.")
+            print()
+            userinput = input("Command? ")
 
     elif userinput == "pick_up_gold":
         inventory.append("gold")
         print()
+        print("You now have some gold.")
+        print()
         userinput = input("Command? ")
+        if "shovel" in inventory and "gold" in inventory:
+            print()
+            print("You now have both a shovel and some gold.")
+            print()
+            userinput = input("Command? ")
+        if "gold" in inventory:
+            print()
+            print("You already have that.")
+            print()
+            userinput = input("Command? ")
 
     if userinput == "go_east" and "shovel" in inventory and "gold" in inventory:
         secondscene = True
