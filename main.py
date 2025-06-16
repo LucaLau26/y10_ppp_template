@@ -13,11 +13,18 @@ elif start == "play_game":
     gamestart = True
 
 while gamestart:
+    print()
     print("You are in a dark room. Moonlight shines through the window.")
     print()
     print("There is a shovel to the south, and some gold to the west.")
     print()
     print("There is a door to the east.")
     print()
-    input("Command? ")
+    userinput = input("Command? ")
+
+    if userinput == "go_north":
+        print("Command not received.")
+
+    elif userinput == "go_south":
+        print("There is a shovel in front of you.")
 
