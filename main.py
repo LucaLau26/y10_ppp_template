@@ -22,9 +22,14 @@ while gamestart:
     print()
     userinput = input("Command? ")
 
-    if userinput == "go_north":
-        print("Command not received.")
+    if userinput == "pick_up_shovel":
+        inventory = "shovel"
 
-    elif userinput == "go_south":
-        print("There is a shovel in front of you.")
+    elif userinput == "pick_up_gold":
+        inventory = "gold"
+
+    if userinput == "go_east" and inventory != "shovel" or "gold":
+        print("You can't do that yet.")
+        print()
+        
 
