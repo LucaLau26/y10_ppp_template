@@ -7,7 +7,8 @@ start = input("Ready to play? (play_game/dont_play_game) ")
 inventory = []
 
 if start == "dont_play_game":
-    pass
+    gamestart = False
+    secondscene = False
 
 elif start == "play_game":
     gamestart = True
@@ -24,14 +25,19 @@ while gamestart:
 
     if userinput == "pick_up_shovel":
         inventory.append("shovel")
+        print()
+        userinput = input("Command? ")
 
     elif userinput == "pick_up_gold":
         inventory.append("gold")
+        print()
+        userinput = input("Command? ")
 
     if userinput == "go_east" and "shovel" in inventory and "gold" in inventory:
         secondscene = True
     else: 
         print("You can't do that yet.")
+        userinput = input("Command? ")
         
 gamestart = False
 
