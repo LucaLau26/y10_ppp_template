@@ -28,8 +28,17 @@ while gamestart:
     elif userinput == "pick_up_gold":
         inventory.append("gold")
 
-    if userinput == "go_east" and inventory != "shovel" or "gold":
+    if userinput == "go_east" and "shovel" in inventory and "gold" in inventory:
+        secondscene = True
+    else: 
         print("You can't do that yet.")
-        print()
         
+gamestart = False
 
+while secondscene:
+    print()
+    print("PALE LUNA SMILES AT YOU.")
+    print()
+    print("You are in a forest. There are paths to the north, west, and east.")
+    print()
+    userinput = input("Command? ")
