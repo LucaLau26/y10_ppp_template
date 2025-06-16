@@ -4,7 +4,7 @@ print("Before you play, commands go like this: 'go_north' and 'pick_up_(item)' "
 print()
 start = input("Ready to play? (play_game/dont_play_game) ")
 
-inventory = ()
+inventory = []
 
 if start == "dont_play_game":
     pass
@@ -17,7 +17,7 @@ while gamestart:
     print()
     print("There is a shovel to the south, and some gold to the west.")
     print()
-    print("There is also a door to the east.")
+    print("There is a door to the east.")
     print()
     input("Command? ")
 
