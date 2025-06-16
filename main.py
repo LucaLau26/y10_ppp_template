@@ -1,6 +1,6 @@
 print("WELCOME TO PALE LUNA")
 print()
-print("Before you play, commands go like this: 'go_north' and 'pick_up_(item)' ")
+print("Before you play, commands go like this: 'go north' and 'pick up (item)' ")
 print()
 start = input("Ready to play? (play_game/dont_play_game) ")
 
@@ -23,7 +23,7 @@ while gamestart:
     print()
     userinput = input("Command? ")
 
-    if userinput == "pick_up_shovel":
+    if userinput == "pick_up_shovel" or :
         inventory.append("shovel")
         print()
         print("You now have a shovel.")
