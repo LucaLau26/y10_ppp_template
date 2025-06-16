@@ -23,10 +23,10 @@ while gamestart:
     userinput = input("Command? ")
 
     if userinput == "pick_up_shovel":
-        inventory = "shovel"
+        inventory.append("shovel")
 
     elif userinput == "pick_up_gold":
-        inventory = "gold"
+        inventory.append("gold")
 
     if userinput == "go_east" and inventory != "shovel" or "gold":
         print("You can't do that yet.")
