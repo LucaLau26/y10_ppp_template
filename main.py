@@ -20,7 +20,6 @@ while gamestart:
     print()
     print("There is a door to the east.")
     print()
-    print()
     userinput = input("Command? ")
 
     if userinput == "pick_up_shovel":
