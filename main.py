@@ -67,34 +67,34 @@ elif start == "play_game":
             
     gamestart = False
 
-while secondscene:
-    print()
-    print("PALE LUNA SMILES AT YOU.")
-    print()
-    print("You are in a forest. There are paths to the north, west, and east.")
-    print()
-    userinput = input("Command? ")
-
-    if userinput == "go east" or "go north" or "go west":
+    while secondscene:
         print()
-        print("Command not received")
+        print("PALE LUNA SMILES AT YOU.")
+        print()
+        print("You are in a forest. There are paths to the north, west, and east.")
         print()
         userinput = input("Command? ")
 
-    elif userinput == "go south":
-        print()
-        print("You can't go back now.")
-        print()
-        userinput = input("Command? ")
+        if userinput == "go east" or "go north" or "go west":
+            print()
+            print("Command not received")
+            print()
+            userinput = input("Command? ")
 
-    elif userinput == "PALELUNALIESHERE":
-        finalscene = True
+        elif userinput == "go south":
+            print()
+            print("You can't go back now.")
+            print()
+            userinput = input("Command? ")
 
-    else:
-        print()
-        print("Command not received.")
-        print()
-        userinput = input("Command? ")
+        elif userinput == "PALELUNALIESHERE":
+            finalscene = True
+
+        else:
+            print()
+            print("Command not received.")
+            print()
+            userinput = input("Command? ")
 
 while finalscene:
     print()
