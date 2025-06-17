@@ -2,7 +2,7 @@ print("WELCOME TO PALE LUNA")
 print()
 print("Before you play, commands go like this: 'go north' and 'pick up (item)' ")
 print()
-start = input("Ready to play? (play_game/dont_play_game) ")
+start = input("Ready to play? (play game/dont play game) ")
 
 inventory = []
 
@@ -12,61 +12,60 @@ if start == "dont_play_game":
 
 elif start == "play_game":
     gamestart = True
-
-while gamestart:
-    print()
-    print("You are in a dark room. Moonlight shines through the window.")
-    print()
-    print("There is a shovel to the south, and some gold to the west.")
-    print()
-    print("There is a door to the east.")
-    print()
-    userinput = input("Command? ")
-
-    if userinput == "pickupshovel":
-        inventory.append("shovel")
+    while gamestart:
         print()
-        print("You now have a shovel.")
+        print("You are in a dark room. Moonlight shines through the window.")
         print()
-        userinput == input("Command? ")
-        if "shovel" in inventory:
-            print()
-            print("You already have that.")
-            print()
-            userinput = input("Command? ")
-    
-    elif userinput == "pickupgold":
-        inventory.append("gold")
+        print("There is a shovel to the south, and some gold to the west.")
         print()
-        print("You now have some gold.")
+        print("There is a door to the east.")
         print()
         userinput = input("Command? ")
-        if "shovel" in inventory and "gold" in inventory:
-            print()
-            print("You now have both a shovel and some gold.")
-            print()
-            userinput = input("Command? ")
-        if "gold" in inventory:
-            print()
-            print("You already have that.")
-            print()
-            userinput = input("Command? ")
 
-    else:
-        print()
-        print("Command not received.")
-        print()
-        userinput = input("Command? ")    
-
-    if userinput == "go east" and "shovel" in inventory and "gold" in inventory:
-        secondscene = True
-    else:
-        print()
-        print("You can't do that yet.")
-        print()
-        userinput = input("Command? ")
+        if userinput == "pickupshovel":
+            inventory.append("shovel")
+            print()
+            print("You now have a shovel.")
+            print()
+            userinput == input("Command? ")
+            if "shovel" in inventory:
+                print()
+                print("You already have that.")
+                print()
+                userinput = input("Command? ")
         
-gamestart = False
+        elif userinput == "pickupgold":
+            inventory.append("gold")
+            print()
+            print("You now have some gold.")
+            print()
+            userinput = input("Command? ")
+            if "shovel" in inventory and "gold" in inventory:
+                print()
+                print("You now have both a shovel and some gold.")
+                print()
+                userinput = input("Command? ")
+            if "gold" in inventory:
+                print()
+                print("You already have that.")
+                print()
+                userinput = input("Command? ")
+
+        else:
+            print()
+            print("Command not received.")
+            print()
+            userinput = input("Command? ")    
+
+        if userinput == "go east" and "shovel" in inventory and "gold" in inventory:
+            secondscene = True
+        else:
+            print()
+            print("You can't do that yet.")
+            print()
+            userinput = input("Command? ")
+            
+    gamestart = False
 
 while secondscene:
     print()
