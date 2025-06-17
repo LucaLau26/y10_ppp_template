@@ -6,11 +6,12 @@ start = input("Ready to play? (play game/dont play game) ")
 
 inventory = []
 
-if start == "dont_play_game":
+if start == "dont play game":
     gamestart = False
     secondscene = False
+    finalscene = False
 
-elif start == "play_game":
+elif start == "play game":
     gamestart = True
     while gamestart:
         print()
