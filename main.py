@@ -23,7 +23,7 @@ while gamestart:
     print()
     userinput = input("Command? ")
 
-    if userinput == "pick_up_shovel":
+    if userinput == "pickupshovel":
         inventory.append("shovel")
         print()
         print("You now have a shovel.")
@@ -34,8 +34,8 @@ while gamestart:
             print("You already have that.")
             print()
             userinput = input("Command? ")
-
-    elif userinput == "pick_up_gold":
+    
+    elif userinput == "pickupgold":
         inventory.append("gold")
         print()
         print("You now have some gold.")
@@ -52,7 +52,13 @@ while gamestart:
             print()
             userinput = input("Command? ")
 
-    if userinput == "go_east" and "shovel" in inventory and "gold" in inventory:
+    else:
+        print()
+        print("Command not received.")
+        print()
+        userinput = input("Command? ")    
+
+    if userinput == "go east" and "shovel" in inventory and "gold" in inventory:
         secondscene = True
     else:
         print()
@@ -70,3 +76,39 @@ while secondscene:
     print()
     userinput = input("Command? ")
 
+    if userinput == "go east" or "go north" or "go west":
+        print()
+        print("Command not received")
+        print()
+        userinput = input("Command? ")
+
+    elif userinput == "go south":
+        print()
+        print("You can't go back now.")
+        print()
+        userinput = input("Command? ")
+
+    elif userinput == "PALELUNALIESHERE":
+        finalscene = True
+
+    else:
+        print()
+        print("Command not received.")
+        print()
+        userinput = input("Command? ")
+
+while finalscene:
+    print()
+    print("pale luna smiles wide.")
+    print()
+    print("There are no paths.")
+    print()
+    print("PALE LUNA SMILES WIDE.")
+    print()
+    print("The ground is soft.")
+    print()
+    print("\033[31mPALE LUNA SMILES WIDE.\033[31m")
+    print()
+    print("Here.")
+    print()
+    userinput = input("Command? ")
