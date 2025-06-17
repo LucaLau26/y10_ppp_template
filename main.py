@@ -23,7 +23,7 @@ while gamestart:
     print()
     userinput = input("Command? ")
 
-    if userinput == "pick_up_shovel" or :
+    if userinput == "pick_up_shovel":
         inventory.append("shovel")
         print()
         print("You now have a shovel.")
@@ -69,3 +69,4 @@ while secondscene:
     print("You are in a forest. There are paths to the north, west, and east.")
     print()
     userinput = input("Command? ")
+
