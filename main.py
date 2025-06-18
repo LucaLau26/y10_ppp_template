@@ -4,8 +4,6 @@ print("Before you play, commands go like this: 'gonorth' and 'pickup(item)' ")
 print()
 start = input("Ready to play? (playgame/dontplaygame) ")
 
-items = ["shovel", "rope", "gold"]
-
 inventory = []
 
 if start == "dontplaygame":
@@ -23,15 +21,8 @@ elif start == "playgame":
     print()
     userinput = input("Command? ")
 
-    gamestart = True
-    while gamestart:
-        if "pickup" in userinput:
-            userinput.split
-            splitword = userinput.split(" ")
-            for i in splitword:
-                if i in items:
-                    items.remove(i)
-                    inventory.append(i)
+    if userinput == "pickupshovel":
+        inventory.append("shovel")
         
         if userinput == "goeast" and "shovel" not in inventory and "gold" not in inventory and "rope" not in inventory:
             print()
