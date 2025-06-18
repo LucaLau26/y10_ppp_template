@@ -31,6 +31,7 @@ elif start == "playgame":
             for i in splitword:
                 if i in items:
                     items.remove(i)
+                    inventory.append(i)
         
         if userinput == "goeast" and "shovel" in inventory and "gold" in inventory and "rope" in inventory:
             secondscene = True
