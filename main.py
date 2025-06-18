@@ -4,6 +4,8 @@ print("Before you play, commands go like this: 'gonorth' and 'pickup(item)' ")
 print()
 start = input("Ready to play? (playgame/dontplaygame) ")
 
+items = ["shovel", "rope", "gold"]
+
 inventory = []
 
 if start == "dontplaygame":
