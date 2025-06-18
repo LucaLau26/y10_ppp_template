@@ -23,7 +23,40 @@ elif start == "playgame":
 
     if userinput == "pickupshovel":
         inventory.append("shovel")
+        print()
+        print("You now have a shovel.")
+        print()
+        userinput = input("Command? ")
+        if "shovel" in inventory:
+            print()
+            print("You already have this.")
+            print()
+            userinput = input("Command? ")
         
+    if userinput == "pickupgold":
+        inventory.append("gold")
+        print()
+        print("You now have some gold.")
+        print()
+        userinput = input("Command? ")
+        if "gold" in inventory:
+            print()
+            print("You already have this.")
+            print()
+            userinput = input("Command? ")
+
+    if userinput == "pickupshovel":
+        inventory.append("shovel")
+        print()
+        print("You now have a shovel")
+        print()
+        userinput = input("Command? ")
+        if "shovel" in inventory:
+            print()
+            print("You already have this.")
+            print()
+            userinput = input("Command? ")
+
         if userinput == "goeast" and "shovel" not in inventory and "gold" not in inventory and "rope" not in inventory:
             print()
             print("You can't do that yet.")
