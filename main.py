@@ -25,27 +25,9 @@ elif start == "playgame":
         print()
         userinput = input("Command? ")
 
-        if userinput == "pickupshovel":
-            inventory.append("shovel")
-            print()
-            print("You now have a shovel.")
-            print()
-            userinput == input("Command? ")
-        
-        if userinput == "pickupgold":
-            inventory.append("gold")
-            print()
-            print("You now have some gold.")
-            print()
-            userinput = input("Command? ")
-             
-        if userinput == "pickuprope":
-            inventory.append("rope")
-            print()
-            print("You now have a rope.")
-            print()
-            userinput = input("Command? ")
-             
+        if "pickup" in userinput:
+            userinput.split
+            splitword = userinput.split(" ")
         
         if userinput == "goeast" and "shovel" in inventory and "gold" in inventory and "rope" in inventory:
             secondscene = True
