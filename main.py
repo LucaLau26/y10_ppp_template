@@ -37,7 +37,6 @@ elif start == "playgame":
             print()
             userinput = input("Command? ")
              
-
         if userinput == "pickuprope":
             inventory.append("rope")
             print()
