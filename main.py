@@ -14,28 +14,27 @@ if start == "dontplaygame":
     finalscene = False
 
 elif start == "playgame":
-        print()
-        print("You are in a dark room. Moonlight shines through the window.")
-        print()
-        print("There is a shovel, a rope, and some gold in the corner.")
-        print()
-        print("There is an opened door to the east.")
-        print()
-        userinput = input("Command? ")
+    print()
+    print("You are in a dark room. Moonlight shines through the window.")
+    print()
+    print("There is a shovel, a rope, and some gold in the corner.")
+    print()
+    print("There is an opened door to the east.")
+    print()
+    userinput = input("Command? ")
 
-gamestart = True
-while gamestart:
-    if "pickup" in userinput:
-        userinput.split
-        splitword = userinput.split(" ")
-        for i in splitword:
-            if i in items:
-                items.remove(i)
-                inventory.append(i)
+    gamestart = True
+    while gamestart:
+        if "pickup" in userinput:
+            userinput.split
+            splitword = userinput.split(" ")
+            for i in splitword:
+                if i in items:
+                    items.remove(i)
+                    inventory.append(i)
         
-    if userinput == "goeast" and "shovel" in inventory and "gold" in inventory and "rope" in inventory:
-        secondscene = True
-        while secondscene:
+        if userinput == "goeast" and "shovel" in inventory and "gold" in inventory and "rope" in inventory:
+            gamestart = False
             print()
             print("Reap your reward.")
             print()
@@ -45,40 +44,40 @@ while gamestart:
             print()
             userinput = input("Command? ")
 
-            if userinput == "goeast" or "gonorth" or "gowest":
-                print()
-                print("Command not received")
-                print()
-                userinput = input("Command? ")
+            secondscene = True
+            while secondscene:
+                if userinput == "goeast" or "gonorth" or "gowest":
+                    print()
+                    print("Command not received")
+                    print()
+                    userinput = input("Command? ")
 
-            elif userinput == "gosouth":
-                print()
-                print("You can't go back now.")
-                print()
-                userinput = input("Command? ")
+                elif userinput == "gosouth":
+                    print()
+                    print("You can't go back now.")
+                    print()
+                    userinput = input("Command? ")
 
-            elif userinput == "usegold":
-                print()
-                print("Not here.")
-                print()
-                userinput = input("Command? ")
+                elif userinput == "usegold":
+                    print()
+                    print("Not here.")
+                    print()
+                    userinput = input("Command? ")
 
-            elif userinput == "useshovel":
-                print()
-                print("Not now.")
-                print()
-                userinput = input("Command? ")
+                elif userinput == "useshovel":
+                    print()
+                    print("Not now.")
+                    print()
+                    userinput = input("Command? ")
 
-            elif userinput == "userope":
-                print()
-                print("You've already used this...")
-                print()
-                userinput = input("Command? ")
+                elif userinput == "userope":
+                    print()
+                    print("You've already used this...")
+                    print()
+                    userinput = input("Command? ")
 
-            elif userinput == "PALELUNALIESHERE":
-                secondscene = False
-                finalscene = True
-                while finalscene:
+                elif userinput == "PALELUNALIESHERE":
+                    secondscene = False
                     print()
                     print("pale luna smiles wide.")
                     print()
@@ -94,44 +93,46 @@ while gamestart:
                     print()
                     userinput = input("Command? ")
 
-                if userinput== "dighole":
-                    print()
-                    userinput = input("What's next? ")
-                    print()
+                    finalscene = True
+                    while finalscene:
+                        if userinput== "dighole":
+                            print()
+                            userinput = input("What's next? ")
+                            print()
 
-                elif userinput == "dropgold" or userinput == "fillhole":
-                    print("Not the right order.")
-                    print()
-                    userinput = input("Command? ")
-                    print()
+                        elif userinput == "dropgold" or userinput == "fillhole":
+                            print("Not the right order.")
+                            print()
+                            userinput = input("Command? ")
+                            print()
 
-                if userinput == "dropgold":
-                    userinput = input("What's next? ")
-                    print()
+                        if userinput == "dropgold":
+                            userinput = input("What's next? ")
+                            print()
 
-                elif userinput == "dighole" or userinput == "fillhole":
-                    print("Not the right order.")
-                    print()
-                    userinput = input("Command? ")
-                    print()
+                        elif userinput == "dighole" or userinput == "fillhole":
+                            print("Not the right order.")
+                            print()
+                            userinput = input("Command? ")
+                            print()
 
-                if userinput == "fillhole":
-                    print()
-                    print("Congratulations!!")
-                    print()
-                    print("—— 40.24248 ——")
-                    print("—— -121.4434 ——")
-                    finalscene = False
-                    break
+                        if userinput == "fillhole":
+                            print()
+                            print("Congratulations!!")
+                            print()
+                            print("—— 40.24248 ——")
+                            print("—— -121.4434 ——")
+                            finalscene = False
+                            break
 
-                elif userinput == "dighole" or userinput == "dropgold":
-                    print("Not the right order.")
-                    print()
-                    userinput = input("Command? ")
-                    print()
-                        
-                else:
-                    print()
-                    print("Command not received.")
-                    print()
-                    userinput = input("Command? ")
+                        elif userinput == "dighole" or userinput == "dropgold":
+                            print("Not the right order.")
+                            print()
+                            userinput = input("Command? ")
+                            print()
+                                
+                        else:
+                            print()
+                            print("Command not received.")
+                            print()
+                            userinput = input("Command? ")
