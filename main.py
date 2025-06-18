@@ -47,7 +47,6 @@ elif start == "playgame":
              
         
         if userinput == "goeast" and "shovel" in inventory and "gold" in inventory and "rope" in inventory:
-             
             secondscene = True
             while secondscene:
                 print()
