@@ -75,7 +75,7 @@ elif start == "playgame":
                     print()
                     userinput = input("Command? ")
 
-                elif userinput == "usegold":
+                if userinput == "usegold":
                     print()
                     print("Not here.")
                     print()
