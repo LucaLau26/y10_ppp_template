@@ -44,18 +44,14 @@ if start == "playgame":
             print()
             userinput = input("Command? ")
 
-        if userinput == "goeast" and "shovel" not in inventory and "gold" not in inventory and "rope" not in inventory:
-                print()
-                print("You can't do that yet.")
-                print()
-                userinput = input("Command? ")
-        if userinput == "goeast" and "shovel" not in inventory and "gold" not in inventory and "rope" not in inventory:
-                print()
-                print("You can't do that yet.")
-                print()
-                userinput = input("Command? ")
+#        if userinput == "goeast" and "shovel" not in inventory and "gold" not in inventory and "rope" not in inventory:
+#                print()
+#                print("You can't do that yet.")
+#                print()
+#                userinput = input("Command? ")
 
-        elif userinput == "goeast" and "shovel" in inventory and "gold" in inventory and "rope" in inventory:
+
+        if userinput == "goeast" and "shovel" in inventory and "gold" in inventory and "rope" in inventory:
             gamestart = False
             print()
             print("Reap your reward.")
@@ -63,6 +59,11 @@ if start == "playgame":
             print("PALE LUNA SMILES AT YOU.")
             print()
             print("You are in a forest. There are paths to the north, west, and east.")
+            print()
+            userinput = input("Command? ")
+        else:
+            print()
+            print("You can't do that yet.")
             print()
             userinput = input("Command? ")
 
