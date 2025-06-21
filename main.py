@@ -61,11 +61,7 @@ if start == "playgame":
             print("You are in a forest. There are paths to the north, west, and east.")
             print()
             userinput = input("Command? ")
-        else:
-            print()
-            print("You can't do that yet.")
-            print()
-            userinput = input("Command? ")
+
 
             secondscene = True
             while secondscene:
@@ -127,8 +123,8 @@ if start == "playgame":
                             finalscene = False
                             break
 
-                        else:
-                            print()
-                            print("Command not received.")
-                            print()
-                            userinput = input("Command? ")
+        else:
+            print()
+            print("Command not received.")
+            print()
+            userinput = input("Command? ")
