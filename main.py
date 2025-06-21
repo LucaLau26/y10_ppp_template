@@ -11,7 +11,7 @@ if start == "dontplaygame":
     secondscene = False
     finalscene = False
 
-elif start == "playgame":
+if start == "playgame":
     print()
     print("You are in a dark room. Moonlight shines through the window.")
     print()
