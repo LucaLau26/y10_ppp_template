@@ -69,25 +69,25 @@ elif start == "playgame":
                     print()
                     userinput = input("Command? ")
 
-                elif userinput == "gosouth":
+                if userinput == "gosouth":
                     print()
                     print("You can't go back now.")
                     print()
                     userinput = input("Command? ")
 
-                elif userinput == "usegold":
+                if userinput == "usegold":
                     print()
                     print("Not here.")
                     print()
                     userinput = input("Command? ")
 
-                elif userinput == "useshovel":
+                if userinput == "useshovel":
                     print()
                     print("Not now.")
                     print()
                     userinput = input("Command? ")
 
-                elif userinput == "userope":
+                if userinput == "userope":
                     print()
                     print("You've already used this...")
                     print()
