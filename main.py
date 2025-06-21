@@ -81,7 +81,7 @@ elif start == "playgame":
                     print()
                     userinput = input("Command? ")
 
-                elif userinput == "useshovel":
+                if userinput == "useshovel":
                     print()
                     print("Not now.")
                     print()
