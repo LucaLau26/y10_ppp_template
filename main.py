@@ -104,7 +104,7 @@ elif start == "playgame":
                     print()
                     print("The ground is soft.")
                     print()
-                    print("\033[31mPALE LUNA SMILES WIDE.")
+                    print("\033[31mPALE LUNA SMILES WIDE.\033[0m")
                     print()
                     print("Here.")
                     print()
