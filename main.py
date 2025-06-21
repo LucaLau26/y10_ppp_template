@@ -93,7 +93,7 @@ elif start == "playgame":
                     print()
                     userinput = input("Command? ")
 
-                elif userinput == "PALELUNALIESHERE":
+                if userinput == "PALELUNALIESHERE":
                     secondscene = False
                     print()
                     print("pale luna smiles wide.")
