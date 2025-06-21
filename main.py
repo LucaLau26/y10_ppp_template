@@ -109,7 +109,7 @@ if start == "playgame":
 
                     finalscene = True
                     while finalscene:
-                        if userinput == "fillhole, dropgold, fillhole":
+                        if userinput == "dighole, dropgold, fillhole":
                             print()
                             print("Congratulations!!")
                             print()
