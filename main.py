@@ -69,7 +69,7 @@ elif start == "playgame":
                     print()
                     userinput = input("Command? ")
 
-                elif userinput == "gosouth":
+                if userinput == "gosouth":
                     print()
                     print("You can't go back now.")
                     print()
