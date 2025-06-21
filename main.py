@@ -112,28 +112,7 @@ elif start == "playgame":
 
                     finalscene = True
                     while finalscene:
-                        if userinput == "dighole":
-                            print()
-                            userinput = input("What's next? ")
-                            print()
-
-                        elif userinput == "dropgold" or userinput == "fillhole":
-                            print("Not the right order.")
-                            print()
-                            userinput = input("Command? ")
-                            print()
-
-                        if userinput == "dropgold":
-                            userinput = input("What's next? ")
-                            print()
-
-                        elif userinput == "dighole" or userinput == "fillhole":
-                            print("Not the right order.")
-                            print()
-                            userinput = input("Command? ")
-                            print()
-
-                        if userinput == "fillhole":
+                        if userinput == "fillhole, dropgold, fillhole":
                             print()
                             print("Congratulations!!")
                             print()
@@ -142,12 +121,6 @@ elif start == "playgame":
                             finalscene = False
                             break
 
-                        elif userinput == "dighole" or userinput == "dropgold":
-                            print("Not the right order.")
-                            print()
-                            userinput = input("Command? ")
-                            print()
-                                
                         else:
                             print()
                             print("Command not received.")
