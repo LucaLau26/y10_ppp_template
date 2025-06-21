@@ -49,6 +49,11 @@ if start == "playgame":
                 print("You can't do that yet.")
                 print()
                 userinput = input("Command? ")
+        if userinput == "goeast" and "shovel" not in inventory and "gold" not in inventory and "rope" not in inventory:
+                print()
+                print("You can't do that yet.")
+                print()
+                userinput = input("Command? ")
 
         elif userinput == "goeast" and "shovel" in inventory and "gold" in inventory and "rope" in inventory:
             gamestart = False
