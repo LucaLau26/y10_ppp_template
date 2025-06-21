@@ -112,7 +112,7 @@ elif start == "playgame":
 
                     finalscene = True
                     while finalscene:
-                        if userinput== "dighole":
+                        if userinput == "dighole":
                             print()
                             userinput = input("What's next? ")
                             print()
