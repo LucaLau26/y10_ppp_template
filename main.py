@@ -87,7 +87,7 @@ elif start == "playgame":
                     print()
                     userinput = input("Command? ")
 
-                elif userinput == "userope":
+                if userinput == "userope":
                     print()
                     print("You've already used this...")
                     print()
