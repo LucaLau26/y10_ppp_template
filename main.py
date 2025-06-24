@@ -10,6 +10,8 @@ if start == "dontplaygame":
     gamestart = False
     secondscene = False
     finalscene = False
+    print()
+    print("\033[31mYOU CAN'T RUN FROM US FOREVER\033[0m")
 
 if start == "playgame":
     print()
@@ -109,7 +111,7 @@ if start == "playgame":
 
                     finalscene = True
                     while finalscene:
-                        if userinput == "dighole, dropgold, fillhole":
+                        if userinput == "dighole dropgold fillhole":
                             print()
                             print("Congratulations!!")
                             print()
@@ -117,6 +119,11 @@ if start == "playgame":
                             print("—— -121.4434 ——")
                             finalscene = False
                             break
+                        else: 
+                            print()
+                            print("Command not received. ")
+                            print()
+                            userinput = input("Command? ")
 
         else:
             print()
